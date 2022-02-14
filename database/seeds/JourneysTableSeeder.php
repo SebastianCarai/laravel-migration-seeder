@@ -19,7 +19,7 @@ class JourneysTableSeeder extends Seeder
             $new_journey->price = $faker->randomFloat(2, 100, 10000);
             $new_journey->start_journey_date = $faker->dateTime;
             $new_journey->end_journey_date = $faker->dateTime;
-            $new_journey->destination_description = $faker->paragraphs();
+            $new_journey->destination_description = $faker->paragraph();
             $new_journey->save();
         }
     }   
